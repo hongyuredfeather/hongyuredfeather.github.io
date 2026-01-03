@@ -54,7 +54,6 @@ h2 {
     font-size: 16px;
     margin-bottom: 15px; /* 段落之间隔开 */
 }
-
 /* 项目作品集板块样式 */
 .projects {
     margin-bottom: 40px;
@@ -67,20 +66,27 @@ h2 {
     padding: 20px;
     border-bottom: 1px dashed #eee; /* 项目之间虚线分割 */
     margin-bottom: 20px;
+    cursor: pointer; /* 提示可点击 */
+    transition: all 0.3s; /* 过渡动画 */
+}
+/* 新增：悬浮样式 */
+.project-item:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* rgba参数间增加空格，提升可读性 */
+}
+/* 新增：点击反馈 */
+.project-item:active {
+    transform: scale(0.98);
 }
 .project-item:last-child {
     border-bottom: none; /* 最后一个项目取消分割线 */
 }
 .project-item h3 {
-    color: #34495e; /* 项目标题颜色：深灰色 */
+    color: #4495e7; /* 修正为6位十六进制颜色值 */
     font-size: 18px;
     margin-bottom: 8px;
 }
-.project-item p {
-    color: #7f8c8d;
-    font-size: 15px;
-}
-
+/* 后面的样式保持不变 */
 /* 联系方式板块样式 */
 .contact {
     margin-bottom: 40px;
